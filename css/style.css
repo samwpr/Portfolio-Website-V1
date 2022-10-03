@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --darkest: #333;
+    --Gray: #7a7a7a;
+    --accent: rgb(0, 123, 255);
+    --lightGray: #f6f7fb;
+    --offWhite: #f9fafb;
+    --pureWhite: white;
+}
+
+/*General Styles*/
+*, *::before, *::after{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, button, input, textarea {
+    font-family: "Montserrat", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    position: relative;
+    z-index: 5;
+    max-width: 92rem;
+    padding: 0 4rem;
+    margin: 0 auto;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    font-size: 1rem;
+    color: var(--darkest);
+    line-height: 1.5;
+}
+/*End General Styles*/
+
+
+/*Header*/
+header{
+    width: 100%;
+    background-color: var(--pureWhite);
+    overflow: hidden;
+}
+
+nav{
+    width: 100%;
+    position: relative;
+    z-index: 50;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.links ul{
+    display: flex;
+    padding-top: 7px;
+}
+
+.links a{
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    color: var(--Gray);
+    font-size: 0.8rem;
+    line-height: 1;
+    transition: all 0.8;
+}
+
+.links a.active{
+    background-color: var(--accent);
+    color: var(--pureWhite);
+    border-radius: 2rem;
+    margin-left: 1rem;
+}
+
+.links a:hover{
+    color: var(--darkest);
+}
+
+.links a.active:hover{
+    color: var(--pureWhite);
+    background-color: rgb(0, 81, 255);
+}
+
+.header-content .container.grid-2{
+    min-height: calc(80vh - 4rem);
+    padding-bottom: 2.5rem;
+    text-align: left;
+}
+
+.header-title{
+    line-height: 1.5;
+    color: var(--darkest);
+}
+
+
+/*End Header*/
+
+
