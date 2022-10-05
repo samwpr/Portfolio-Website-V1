@@ -227,10 +227,10 @@ nav .container{
 
 .letters{
     position: absolute;
-    width: 11%;
-    top: 45px;
+    width: 6%;
+    top:27px;
     align-content: center;
-    opacity: 0.03;
+    opacity: 0.4;
 }
 /*End Header*/
 
@@ -320,7 +320,6 @@ nav .container{
 .portfolio{
     position: relative;
     width: 100%;
-    min-height: 1200px;
     background-color: var(--pureWhite);
 }
 
@@ -375,9 +374,67 @@ nav .container{
 .gallery-image{
     position: relative;
     overflow: hidden;
-    border-radius: 16px;
+    border-radius: 10px;
     height: 330px;
     width: 100%;
+    cursor: pointer;
 }
+
+.gallery-image img{
+    position: absolute;
+    height: 115%;
+    width: initial;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.gallery-image .img-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    color: var(--pureWhite);
+    background-color: rgba(40, 40, 40, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2rem 3.2rem;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.plus:before, .plus:after{
+    content: "";
+    position: absolute;
+    width: 4.5rem;
+    height: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--pureWhite);
+    border-radius: 3px;
+}
+
+.plus:before{
+    transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.img-description{
+    width: 100%;
+}
+
+.img-overlay h3{
+    font-size: 1.5rem;
+}
+
+.gallery-image:hover .img-overlay {
+    opacity: 1;
+}
+
 /*End Portfolio*/
 
