@@ -227,10 +227,11 @@ nav .container{
 
 .letters{
     position: absolute;
-    width: 6%;
-    top:27px;
+    width: 1.5%;
+    top:0px;
+    left: 5px;
     align-content: center;
-    opacity: 0.4;
+    opacity: 0.7;
 }
 /*End Header*/
 
@@ -437,4 +438,135 @@ nav .container{
 }
 
 /*End Portfolio*/
+
+
+/*About*/
+.about{
+    overflow: hidden;
+}
+
+.about img{
+    max-width: 600px;
+}
+
+.about .text{
+    margin-top: 1rem;
+}
+
+.skills{
+    margin: 1.5rem 0 2.5rem 0;
+}
+
+.skill{
+    margin: 1rem 0;
+}
+
+.skill-title{
+    color: var(--Gray);
+    margin-bottom: 0.3rem;
+}
+
+.skill-bar {
+    width: 70%;
+    height: 8px;
+    border-radius: 4px;
+    background-color: var(--lightGray);
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-progress {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: 0;
+    background-color: var(--darkest);
+    transition: 1s;
+}
+
+.about .column-1{
+    position: relative;
+}
+
+.about .column-1:before {
+    content: "Samuel";
+    position: absolute;
+    font-size: 8rem;
+    font-weight: 800;
+    color: var(--main-color);
+    opacity: 0.04;
+    top: 20px;
+    left: 0;
+    line-height: 0;
+  }
+/*End About*/
+
+
+
+
+/*Testimonials*/
+.testimonials{
+    background-color: var(--lightGray);
+    overflow: hidden;
+}
+
+.testi-content {
+    margin-top: 6rem;
+}
+
+.reviews{
+    overflow: hidden;
+}
+
+.review{
+    position: relative;
+    padding: 2rem 1.5rem;
+}
+
+.quote{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--Gray);
+    opacity: 0.1;
+    font-size: 8rem;
+}
+
+.review-text{
+    line-height: 1.7;
+}
+
+.review-info{
+    margin-top: 2rem;
+}
+
+.review-name{
+    color: var(--darkest);
+}
+
+.review-job{
+    color: var(--Gray);
+}
+
+.review-nav{
+    bottom: 2.2rem;
+    top: initial;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after{
+    display: none;
+}
+
+.swiper-button-next{
+    right: 2rem;
+    left: initial;
+}
+
+
+.swiper-button-prev{
+    right: 4.5rem;
+    left: initial;
+}
+/*End Testimonials*/
 
