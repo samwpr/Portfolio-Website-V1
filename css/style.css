@@ -3,7 +3,8 @@
 :root{
     --darkest: #333;
     --Gray: #7a7a7a;
-    --accent: rgb(0, 123, 255);
+    --accent: rgb(89, 89, 89);
+    /*--accent: rgb(0, 123, 255);*/
     --lightGray: #f6f7fb;
     --offWhite: #f9fafb;
     --pureWhite: white;
@@ -138,6 +139,10 @@ img{
 
 
 /*Header*/
+#four-square{
+  display: none;
+}
+
 header{
     width: 100%;
     background-color: var(--pureWhite);
@@ -194,24 +199,26 @@ nav .container{
     background-color: rgb(0, 81, 255);
 }
 
+
 .hamburger-menu {
-    width: 2.7rem;
-    height: 3rem;
-    z-index: 100;
-    position: relative;
-    display: none;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  
-  .hamburger-menu .bar {
-    position: relative;
-    width: 2.1rem;
-    height: 3px;
-    border-radius: 3px;
-    background-color: var(--dark-one);
-    transition: 0.5s;
-  }
+  width: 2.7rem;
+  height: 3rem;
+  z-index: 100;
+  bottom: 0;
+  position: relative;
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hamburger-menu .bar {
+  position: relative;
+  width: 2.1rem;
+  height: 3px;
+  border-radius: 3px;
+  background-color: var(--dark-one);
+  transition: 0.5s;
+}
   
   .bar:before,
   .bar:after {
@@ -951,6 +958,7 @@ nav .container{
 
 /*Responsive*/
 @media (max-width: 1280px) {
+
     .text {
       font-size: 1rem;
     }
@@ -1402,6 +1410,20 @@ nav .container{
       margin: 0 auto;
     }
 
+
+
+    #four-square{
+      display: flex;
+      font-size: 1.rem;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+      background: #fff;
+      border-radius: 30%;
+    }
+
     #grid3 {
       display: grid;
       gap: 1.5rem;
@@ -1419,10 +1441,11 @@ nav .container{
       align-items: center;
       justify-content: center;
       text-align: center;
-      transform: translateX(100%);
+      transform: translateY(100%);
       box-shadow: 0 -1px 4px rgba(0,0,0, .15);
       border-radius: 1.5rem 1.5rem 0 0;
       padding: 2rem 1.5rem 4rem;
+      transition: .3s;
 
     }
 

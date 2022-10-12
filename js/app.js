@@ -5,6 +5,7 @@ const footer_input = document.querySelector(".footer-input");
 const hamburger_menu = document.querySelector(".hamburger-menu");
 const navbar = document.querySelector("header nav");
 const links = document.querySelectorAll(".links a");
+const square = document.getElementById("four-square");
 
 footer_input.addEventListener("focus", () => {
   footer_input.classList.add("focus");
@@ -20,6 +21,18 @@ function closeMenu() {
   document.body.classList.remove("stop-scrolling");
 }
 
+
+square.addEventListener("click", () => {
+  if (!navbar.classList.contains("open")) {
+    navbar.classList.add("open");
+    document.body.classList.add("stop-scrolling");
+  } else {
+    closeMenu();
+  }
+});
+
+/*
+
 hamburger_menu.addEventListener("click", () => {
   if (!navbar.classList.contains("open")) {
     navbar.classList.add("open");
@@ -28,6 +41,11 @@ hamburger_menu.addEventListener("click", () => {
     closeMenu();
   }
 });
+
+
+*/
+
+
 
 links.forEach((link) => link.addEventListener("click", () => closeMenu()));
 
