@@ -5,7 +5,8 @@
     --Gray: #7a7a7a;
     --accent: rgb(89, 89, 89);
     /*--accent: rgb(0, 123, 255);*/
-    --lightGray: #f6f7fb;
+    --lightGray: #f3f3f3;
+    --lightGray2: #e1e1e1;
     --offWhite: #f9fafb;
     --pureWhite: white;
 }
@@ -141,6 +142,8 @@ img{
 /*Header*/
 #four-square{
   display: none;
+  padding: 0;
+  margin: 0;
 }
 
 header{
@@ -196,7 +199,7 @@ nav .container{
 
 .links a.active:hover{
     color: var(--pureWhite);
-    background-color: rgb(0, 81, 255);
+    background-color: var(--accent);
 }
 
 
@@ -275,7 +278,7 @@ nav .container{
 
 
 .btn:hover{
-    background-color: rgb(0, 81, 255);
+    background-color: var(--darkest);
 }
 
 
@@ -338,9 +341,9 @@ nav .container{
 .card:before{
     content: attr(data-card);
     position: absolute;
-    top: -20px;
-    right: -15px;
-    font-size: 6rem;
+    top: -10px;
+    right: -8px;
+    font-size: 4rem;
     font-weight: bold;
     line-height: 1;
     color: var(--accent);
@@ -352,7 +355,7 @@ nav .container{
     position: absolute;
     width: 100%;
     height: 0px;
-    top: 0;
+    bottom: 0;
     left: 0;
     background-color: var(--darkest);
     transition: 0.5s;
@@ -364,7 +367,7 @@ nav .container{
 }
 
 .card:hover:after{
-    height: 70px;
+    height: 10px;
 }
 
 
@@ -505,6 +508,10 @@ nav .container{
     opacity: 1;
 }
 
+.portfolio-link{
+  color: white;
+}
+
 /*End Portfolio*/
 
 
@@ -526,13 +533,24 @@ nav .container{
 }
 
 .skill{
-    margin: 1rem 0;
+    margin: 2.5rem 0;
+
+}
+
+.skills p{
+  font-size: 11px;
 }
 
 .skill-title{
     color: var(--Gray);
     margin-bottom: 0.3rem;
+
+
 }
+
+
+
+
 
 .skill-bar {
     width: 70%;
@@ -558,7 +576,7 @@ nav .container{
 }
 
 .about .column-1:before {
-    content: "Samuel";
+    content: "Essex";
     position: absolute;
     font-size: 8rem;
     font-weight: 800;
@@ -1090,11 +1108,18 @@ nav .container{
       max-width: 290px;
       padding: 2.2rem 1.5rem;
     }
+
+    #skills-subtitle{
+      margin: auto;
+      width: 100%;
+    }
   
     .icon {
       width: 65px;
       margin-bottom: 0.8rem;
     }
+
+    
   
     .card .text {
       font-size: 0.9rem;
@@ -1102,7 +1127,7 @@ nav .container{
     }
   
     .card:before {
-      font-size: 5rem;
+      font-size: 3.5rem;
     }
   
     .card-wrap {
@@ -1541,28 +1566,8 @@ nav .container{
       height: 340px;
     }
   
-    .portfolio .half-circle1,
-    .portfolio .triangle,
-    .portfolio .half-circle2 {
-      display: none;
-    }
-  
-    .portfolio .square {
-      top: 10%;
-      left: 14%;
-    }
-  
-    .portfolio .wave {
-      top: 33%;
-    }
-  
-    .portfolio .circle {
-      right: 20%;
-    }
-  
-    .portfolio .xshape {
-      top: 25%;
-    }
+
+
   
     .skill-bar {
       width: 100%;

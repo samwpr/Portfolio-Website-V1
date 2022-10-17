@@ -15,7 +15,7 @@
     <main>
         <header id="header">
             <div class="overlay overlay-lg">
-                <img src="./img/code-number2.png" class="letters" alt=""/>
+                <img src="#" class="letters" alt=""/>
             </div>
             <nav>
                 <div class="container" id="nav">
@@ -25,29 +25,29 @@
 
                             <li class="nav_item">
                                 <a href="#services" class="nav_link" id="nav_link">
-                                    <i class="uil uil-brackets-curly nav_icon"></i> Technologies
+                                    <i class="uil uil-brackets-curly nav_icon" id="navIcon"></i> Technologies
                                 </a>
                             </li>
 
                             <li class="nav_item">
                                 <a href="#portfolio" class="nav_link" id="nav_link">
-                                    <i class="uil uil-web-grid nav_icon"></i> Portfolio
+                                    <i class="uil uil-web-grid nav_icon" id="navIcon"></i> Portfolio
                                 </a>
                             </li>
 
-                            <li class="nav_item"><a href="#aboutme" class="nav_link" id="nav_link"><i class="uil uil-user-square nav_icon"></i> About</a></li>
+                            <li class="nav_item"><a href="#aboutme" class="nav_link" id="nav_link"><i class="uil uil-user-square nav_icon" id="navIcon"></i> About</a></li>
 
-                            <li class="nav_item"><a href="#testimonials" class="nav_link" id="nav_link"><i class="uil uil-comment-alt-heart nav_icon"></i> Testimonials</a></li>
+                            <li class="nav_item"><a href="#testimonials" class="nav_link" id="nav_link"><i class="uil uil-comment-alt-heart nav_icon" id="navIcon"></i> Testimonials</a></li>
 
-                            <li class="nav_item"><a href="SamuelWong-Resume.pdf" class="nav_link" id="nav_link" target="_blank"><i class="uil uil-file nav_icon"></i> Resume</a></li>
+                            <li class="nav_item"><a href="SamuelWong-Resume.pdf" class="nav_link" id="nav_link" target="_blank"><i class="uil uil-file nav_icon" id="navIcon"></i> Resume</a></li>
 
-                            <li class="nav_item"><a href="#contact" class="nav_link" id="nav_link"><i class="uil uil-phone nav_icon"></i> Contact</a></li>
+                            <li class="nav_item"><a href="#contact" class="nav_link" id="nav_link"><i class="uil uil-phone nav_icon" id="navIcon"></i> Contact</a></li>
                         </ul>
                     </div>
 
-                    <div id="square-wrapper">
+                    
                     <i class="uil uil-apps" id="four-square"></i>
-                    </div>
+                   
      
 
                     <!--
@@ -63,7 +63,12 @@
                 <div class="container grid-2">
                     <div class="column-1">
                         <h1 class="header-title">Software Engineer</h1>
-                        <p class="text">Hello, I'm a great software engineer please hire me so I can feed my two cats, Mun Mun and Mi Mi 😸😸</p>
+                        
+                        <h3>👨‍👩‍👧‍👦 Project Management</h3>
+                        <h3>📈 Data Analysis</h3>
+                        <h3>📱 Marketing</h3>
+                        <h3>🖍 UI/UX</h3>
+                        <p class="text">Hello! I'm a great software engineer who has co-founded a website development/digital marketing company previously.</p>
                         <a href="SamuelWong-Resume.pdf" target="_blank" class="btn">View Resume</a>
                     </div>
                     <div class="column-2 image">
@@ -77,43 +82,52 @@
         <section class="services section" id="services">
             <div class="container">
                 <div class="section-header">
-                    <h3 class="title" data-title="What I do">
-                        Skills
+                    <h3 class="title" data-title="">
+                        Technical Skills
                     </h3>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptas praesentium, at nihil laboriosam ad ab laudantium nam corrupti optio!
+                    <p class="text" id="skills-subtitle">Programming languages I am familiar with
                     </p>
+                    <h4 class="text" id="skills-subtitle">Python | JavaScript | HTML | CSS | Java | C++
+                    </h4>
+                    <img src="./img/coding-logo.png" alt="">
                 </div>
 
                 <div class="cards">
                     <div class="card-warp">
-                        <div class="card" data-card="UI/UX">
+                        <div class="card" data-card="CODE">
                             <div class="card-content">
-                                <img src="./img/code-icon.png" class="icon" alt=""/>
-                                <h3 class="title-sm">Web Design</h3>
-                                <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, maiores.</p>
+                                <img src="./img/laptop-icon.png" class="icon" alt=""/>
+                                <h3 class="title-sm">Programming</h3>
+                                <p class="text">Algorithms, Data Structures, Data Analysis, SQL, Web Development</p>
+                                <!--
                                 <a href="#" class="btn small">Read More</a>
+                                -->
                             </div>
                         </div>
                     </div>
 
                     <div class="card-warp">
-                        <div class="card" data-card="UI/UX">
+                        <div class="card" data-card="ADS">
                             <div class="card-content">
-                                <img src="./img/code-icon.png" class="icon" alt=""/>
-                                <h3 class="title-sm">Web Stuff</h3>
-                                <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, maiores.</p>
+                                <img src="./img/social-media-icon.png" class="icon" alt=""/>
+                                <h3 class="title-sm">Marketing</h3>
+                                <p class="text">Google Data Studio, Google Adwords, Facebook and Instagram ads</p>
+                                <!--
                                 <a href="#" class="btn small">Read More</a>
+                                -->
                             </div>
                         </div>
                     </div>
 
                     <div class="card-warp">
-                        <div class="card" data-card="UI/UX">
+                        <div class="card" data-card="MISC">
                             <div class="card-content">
-                                <img src="./img/code-icon.png" class="icon" alt=""/>
-                                <h3 class="title-sm">Web Development</h3>
-                                <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, maiores.</p>
+                                <img src="./img/design-icon.png" class="icon" alt=""/>
+                                <h3 class="title-sm">Other Skills</h3>
+                                <p class="text">Agile, Business Operations, Sales, Acounting, Photoshop, illustrator, Branding</p>
+                                <!--
                                 <a href="#" class="btn small">Read More</a>
+                                -->
                             </div>
                         </div>
                     </div>
@@ -137,14 +151,17 @@
                     </div>
                     
                     <div class="grid">
+                        
                         <div class="grid-item ui web">
                             <div class="gallery-image">
                                 <img src="./img/portfolio/port1.gif" alt="">
                                 <div class="img-overlay">
+                                    <a href="https://github.com/samwpr" class="portfolio-link" target="_blank">
                                     <div class="plus"></div>
                                     <div class="img-description">
                                         <h3>Logo Design</h3>
-                                        <h5>View Demo</h5>
+                                        <h5>Find out more at Github</h5>
+                                    </a>
                                     </div>
                                 </div>
                             </div>
@@ -154,10 +171,12 @@
                             <div class="gallery-image">
                                 <img src="./img/portfolio/port2.gif" alt="">
                                 <div class="img-overlay">
+                                    <a href="https://github.com/samwpr" class="portfolio-link" target="_blank"></a>
                                     <div class="plus"></div>
                                     <div class="img-description">
                                         <h3>Logo Design</h3>
-                                        <h5>View Demo</h5>
+                                        <h5>Find out more at Github</h5>
+                                    </a>
                                     </div>
                                 </div>
                             </div>
@@ -167,10 +186,12 @@
                             <div class="gallery-image">
                                 <img src="./img/portfolio/port1.gif" alt="">
                                 <div class="img-overlay">
+                                    <a href="https://github.com/samwpr" class="portfolio-link" target="_blank"></a>
                                     <div class="plus"></div>
                                     <div class="img-description">
                                         <h3>Logo Design</h3>
-                                        <h5>View Demo</h5>
+                                        <h5>Find out more at Github</h5>
+                                    </a>
                                     </div>
                                 </div>
                             </div>
@@ -180,10 +201,12 @@
                             <div class="gallery-image">
                                 <img src="./img/portfolio/port2.gif" alt="">
                                  <div class="img-overlay">
+                                    <a href="https://github.com/samwpr" class="portfolio-link" target="_blank"></a>
                                     <div class="plus"></div>
                                     <div class="img-description">
                                         <h3>Logo Design</h3>
-                                        <h5>View Demo</h5>
+                                        <h5>Find out more at Github</h5>
+                                    </a>
                                     </div>
                                 </div>
                             </div>
@@ -193,10 +216,12 @@
                             <div class="gallery-image">
                                 <img src="./img/portfolio/port1.gif" alt="">
                                  <div class="img-overlay">
+                                    <a href="https://github.com/samwpr" class="portfolio-link" target="_blank"></a>
                                     <div class="plus"></div>
                                     <div class="img-description">
                                         <h3>Logo Design</h3>
-                                        <h5>View Demo</h5>
+                                        <h5>Find out more at Github</h5>
+                                    </a>
                                     </div>
                                 </div>
                             </div>
@@ -206,10 +231,12 @@
                             <div class="gallery-image">
                                 <img src="./img/portfolio/port2.gif" alt="">
                                  <div class="img-overlay">
+                                    <a href="https://github.com/samwpr" class="portfolio-link" target="_blank"></a>
                                     <div class="plus"></div>
                                     <div class="img-description">
                                         <h3>Logo Design</h3>
-                                        <h5>View Demo</h5>
+                                        <h5>Find out more at Github</h5>
+                                    </a>
                                     </div>
                                 </div>
                             </div>
@@ -219,10 +246,12 @@
                             <div class="gallery-image">
                                 <img src="./img/portfolio/port1.gif" alt="">
                                  <div class="img-overlay">
+                                    <a href="https://github.com/samwpr" class="portfolio-link" target="_blank"></a>
                                     <div class="plus"></div>
                                     <div class="img-description">
                                         <h3>Logo Design</h3>
-                                        <h5>View Demo</h5>
+                                        <h5>Find out more at Github</h5>
+                                    </a>
                                     </div>
                                 </div>
                             </div>
@@ -232,10 +261,12 @@
                             <div class="gallery-image">
                                 <img src="./img/portfolio/port2.gif" alt="">
                                  <div class="img-overlay">
+                                    <a href="https://github.com/samwpr" class="portfolio-link" target="_blank"></a>
                                     <div class="plus"></div>
                                     <div class="img-description">
                                         <h3>Logo Design</h3>
-                                        <h5>View Demo</h5>
+                                        <h5>Find out more at Github</h5>
+                                    </a>
                                     </div>
                                 </div>
                             </div>
@@ -245,10 +276,12 @@
                             <div class="gallery-image">
                                 <img src="./img/portfolio/port1.gif" alt="">
                                  <div class="img-overlay">
+                                    <a href="https://github.com/samwpr" class="portfolio-link" target="_blank"></a>
                                     <div class="plus"></div>
                                     <div class="img-description">
                                         <h3>Logo Design</h3>
-                                        <h5>View Demo</h5>
+                                        <h5>Find out more at Github</h5>
+                                    </a>
                                     </div>
                                 </div>
                             </div>
@@ -262,40 +295,105 @@
         <section class="about section" id="aboutme">
             <div class="container">
                 <div class="section-header">
-                    <h3 class="title" data-title="Who Am I">About me</h3>
+                    <h3 class="title" data-title="">Grades</h3>
                 </div>
                 <div class="section-body grid-2">
                     <div class="column-1">
-                        <h3 class="title-sm">Hello, I'm</h3>
+                        <h3 class="title-sm">University of Essex</h3>
                         <p class="text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta rem repellendus repellat dolore accusantium voluptates beatae maiores, temporibus vero quae.
+                            Bachelor in Computer Science
                         </p>
                         <div class="skills">
                             <div class="skill html">
-                                <h3 class="skill-title">HTML</h3>
+                                <h3 class="skill-title">Placing in class: 1st</h3>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="90%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills">
-                            <div class="skill css">
-                                <h3 class="skill-title">CSS</h3>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="93%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills">
-                            <div class="skill js">
-                                <h3 class="skill-title">JavaScript</h3>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-progress="96%"></div>
+                                    <div class="skill-progress" data-progress="100%"></div>
                                 </div>
                             </div>
                         </div>
 
-                        <a href="#" class="btn">Read More</a>
+                        <div class="skills">
+                            <div class="skill html">
+                                <h3 class="skill-title">On track for 'First Class Honors'</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="100%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills">
+                            <div class="skill css">
+                                <p class="skill-title">Software Engineering | Java | 87/100 (A)</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="87%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills">
+                            <div class="skill js">
+                                <p class="skill-title">Application Programming | Java | 71/100 (A)</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="71%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills">
+                            <div class="skill js">
+                                <p class="skill-title">Database & Information Retrieval | SQL | 83/100 (A)</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="83%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills">
+                            <div class="skill js">
+                                <p class="skill-title">C++ Programming | C++ | 69/100 (B)</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="69%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills">
+                            <div class="skill js">
+                                <p class="skill-title">Data Structures & Algorithms | Java | 75/100 (A)</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills">
+                            <div class="skill js">
+                                <p class="skill-title">Web Application Programming | JS, HTML, CSS, jQuery, JSP, SQL | 87/100 (A)</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="87%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills">
+                            <div class="skill js">
+                                <p class="skill-title">Game Development Team Project | Python | 80/100 (A)</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills">
+                            <div class="skill js">
+                                <p class="skill-title">Cyber Security | Python | 72/100 (A)</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="72%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="SamuelWong-Resume.pdf" class="btn" target="_blank">View Resume</a>
 
                     </div>
                     <div class="column-2 image">
